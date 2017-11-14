@@ -1,0 +1,12 @@
+.currency-table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  thead{
+    background: #d6d2d2;
+  }
+  td, th {
+    padding: 1em;
+    border: 1px solid #dfe2e5;
+    text-align: center;
+  }
+}

@@ -1,0 +1,81 @@
+<section>
+
+  <table class="currency-table">
+    <thead>
+      <tr>
+        <th>
+          ...
+        </th>
+        <th>
+          Volabit
+        </th>
+        <th>
+          Bitso
+        </th>
+        <th>
+          Bitstamp
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          Price MXN
+        </td>
+        <td>
+          <span *ngIf="volabit">
+            {{volabit.mxnPrice | currency:'USD':true:'1.2-2'}}
+          </span>
+        </td>
+        <td>
+          <span *ngIf="bitso">
+            {{bitso.mxnPrice| currency:'USD':true:'1.2-2'}}
+          </span>
+        </td>
+        <td>
+          <span *ngIf="bitstamp">
+            {{bitstamp.mxnPrice| currency:'USD':true:'1.2-2'}}
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Price USD
+        </td>
+        <td>
+          <span *ngIf="volabit">
+            {{volabit.usdPrice | currency:'USD':true:'1.2-2'}}
+          </span>
+        </td>
+        <td>
+          <span *ngIf="bitso">
+            {{bitso.usdPrice | currency:'USD':true:'1.2-2'}}
+          </span>
+        </td>
+        <td>
+          <span *ngIf="bitstamp">
+            {{bitstamp.usdPrice | currency:'USD':true:'1.2-2'}}
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          %
+        </td>
+        <td>
+          <span *ngIf="volabit">
+            {{volabit.percentageVsBitstamp | number:'2.2-2'}}
+          </span>
+        </td>
+        <td>
+          <span *ngIf="bitso">
+            {{bitso.percentageVsBitstamp | number:'2.2-2'}}
+          </span>
+        </td>
+        <td>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</section>
