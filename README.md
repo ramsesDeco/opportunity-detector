@@ -1,5 +1,7 @@
 # OpportunityDetector
 
+To see this you can go to http://immense-wildwood-98621.herokuapp.com/
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.9.
 
 ## Development server
