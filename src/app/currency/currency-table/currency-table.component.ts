@@ -56,10 +56,6 @@ export class CurrencyTableComponent implements OnInit {
     return Mxn / this.usdToMxnRate;
   }
 
-  private cutTo2Decimals(value: number | string): number {
-    return Number.parseFloat(value.toString().match(/^-?\d+(?:\.\d{0,2})?/)[0]);
-  }
-
   private fetchData() {
     let counter = 0;
 
