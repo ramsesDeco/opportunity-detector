@@ -16,9 +16,9 @@ import { CurrencyDisplayView } from './currency-display-view';
 })
 export class CurrencyTableComponent implements OnInit {
 
-  private volabit: CurrencyDisplayView;
-  private bitso: CurrencyDisplayView;
-  private bitstamp: CurrencyDisplayView;
+  public volabit: CurrencyDisplayView;
+  public bitso: CurrencyDisplayView;
+  public bitstamp: CurrencyDisplayView;
   private usdToMxnRate: number;
 
   constructor(private currencyService: CurrencyService, private socketService: SocketService) { }

@@ -9,16 +9,14 @@ import { environment } from '../../environments/environment';
 
 @Injectable()
 export class SocketService {
-  private url: string;
   private socket: any;
 
   constructor(private http: Http, options: RequestOptions) {
     if (environment.production) {
-      this.url = '';
+      this.socket = io();
     } else {
-      this.url = 'http://localhost:3000';
+      this.socket = io('http://localhost:3000');
     }
-    this.socket = io(this.url);
   }
 
   public emit(event, message) {
